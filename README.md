@@ -20,7 +20,7 @@ And you're network is up and running and ready to train. Looking at the argument
 
 Which tells the network we want 3 layers. The first should have 4 neurons(inputs), the second should have 8(hidden neurons), and the final layer should have 2(outputs). You can set any number of layers and neurons with this argument, however, the network must have at least 2 layers and at least 1 neuron per layer.
 
-The next argument is a string used to tell the network what activation function should be used on the layers(in this example we use the sigmoid function). 
+The next argument is a string used to tell the network what activation function should be used on the neurons(in this example we use the sigmoid function). 
 
 ```
 'sig'
