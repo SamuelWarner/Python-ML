@@ -82,7 +82,7 @@ class Linear:
         return self.slope
 
 
-class MazeX:
+class Maze:
     def __init__(self, network_layers, activation_functions):
         # Check arguments for bad input
         if type(network_layers) != list:
