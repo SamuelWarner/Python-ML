@@ -26,14 +26,16 @@ The next argument is a list used to tell the network what activation function sh
 ['relu', 'sig']
 ```
 
+Only 2 activation functions are required for a 3 layer network as the first layer (the input layer) does no processing. Inputs are simply used as is.
+
 Supported functions currently are:
 
 - Sigmoid    ('sig')
 - Relu       ('relu')
-- ReluLeaky  ('reluleak')
+- ReluLeaky*  ('reluleak')
 - Linear     ('lin')
 
-
+* Relu Leaky function has a < 0 slope of 0.01 by default
 
 ## Using the network
 
