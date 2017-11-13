@@ -1,6 +1,6 @@
 # Python Machine Learning
 
-Welcome to a Repository of my personal machine learning code. Feel free to use it where ever you like include the lisence files as per the MIT lisence.
+Welcome to a Repository of my personal machine learning code. Feel free to use it where ever you like just include the license files as per the MIT license.
 
 
 
