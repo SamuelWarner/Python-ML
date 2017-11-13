@@ -35,7 +35,7 @@ Supported functions currently are:
 - ReluLeaky*  ('reluleak')
 - Linear     ('lin')
 
-* Relu Leaky function has a < 0 slope of 0.01 by default
+*Relu Leaky function has a < 0 slope of 0.01 by default
 
 ## Using the network
 
