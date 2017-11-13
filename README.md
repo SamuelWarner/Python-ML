@@ -47,7 +47,7 @@ mynetwork.train([[0.4, 0.2, 0.3, 0.7]], [[0.1, 0.5]])
 
 The network will run a forward pass on the inputs, determine the error using the expected outputs, and backpropagate that error to update the weights for each layer.
 
-You can run forward or backward propagation manually using the "forward(inputs)" or "backward(error)" methods.
+You can run forward or backward propagation manually using the "forward(inputs)" or "backward(error)" methods. It is important to note that forward propagation must be run at least once before back propagation can occur. If forward propagation is not run then the back propagation method will raise exceptions.
 
 As a final note the network includes a bias neuron on every layer by default. The value of each bias is set to 1.0. Bias should **only** be disabled(or re-enabled) through the "set_bias(bool)" method as weights need to be adjusted for the whole network.
 
