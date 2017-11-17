@@ -83,7 +83,7 @@ class Linear:
 
 
 class Maze:
-    def __init__(self, network_layers, activation_functions):
+    def __init__(self, network_layers, activation_functions, lr=None):
         # Check arguments for bad input
         if type(network_layers) != list:
             raise TypeError(" expected list for network_layers, "
@@ -105,9 +105,14 @@ class Maze:
         self.layer_sums = []                   # input sums for all layers in network(excluding input layer)
         self.layer_inputs = []                 # stores each layers "input" values during forward prop
         self.__bias = True                     # determines if network should include a bias node on every layer
-        self.__learning_constant = 0.01        # learning constant, higher value = more aggressive weight adjustments
         self.act = []                          # list of activation function classes used in each network layer
         self.avr_error = 0                     # average error of a training runs error calculations
+
+        # learning constant, higher value = more aggressive weight adjustments
+        if lr:
+            self.__learning_constant = lr
+        else:
+            self.__learning_constant = 0.01
 
         # setup the correct activation function for each network layer
         for k in range(len(activation_functions)):
