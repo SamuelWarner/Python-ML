@@ -1,9 +1,8 @@
 """
 Basic matrix operations package. All functions assume matrix format of a list of lists. Formally created as "xmath"
-module for DOONN project.
+module for DOONN project. **Deprecated Code**
 
-Version 1.0
-2017.10.15
+Author - Samuel Warner
 """
 
 

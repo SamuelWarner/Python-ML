@@ -1,13 +1,9 @@
 """
-Neural Networks and associated activation functions for use in machine learning algorithms.
+Maze network and associated activation functions. **Deprecated code**
 
-Dependencies:
--matrix_operations
-
-Version 1.5
-2017.11.13
+Author - Samuel Warner
 """
-from Utils.matrix_operations import *
+from Modules.matrix_operations import *
 import math
 import random
 import copy
