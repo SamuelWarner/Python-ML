@@ -37,7 +37,7 @@ plt.plot(graph_data)
 plt.ylabel('Error')
 plt.xlabel("training run")
 plt.title('Error over time')
-plt.savefig(f'Polynomial_approximation.png')
+plt.savefig(f'Polynomial Approximation Results.png')
 
 
 
