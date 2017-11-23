@@ -24,4 +24,4 @@ MazeX([4, 64, 128, 256, 128, 64, 2], ['relu', 'relu', 'relu', 'relu', 'relu', 'l
  5. Train on the stored action/observation memory of past games
  6. Start another game.
  
- To use the learned wieghts to play the game use the MazeX method "load_weights" with a network of the same layout as above. An example of this is given in the "CartPolePlay.py" script.
+ To use the learned wieghts to play the game use the MazeX method "load_weights" with a network of the same layout as above. An example of this is given in the "cartpoleplay.py" script.
