@@ -14,7 +14,13 @@ Cart Pole is a game of balance. The goal is to keep a pole balanced on a cart by
 MazeX([4, 64, 128, 256, 128, 64, 2], ['relu', 'relu', 'relu', 'relu', 'relu', 'lin'], learning_constant=0.0001)
 ```
 
- The weights given here as "CartPoleLearnedWeights.npy" were learned during a 15000 game training run which took 73 minutes on a geforce GTX 1070, and i5 3.3ghz processor. As can be seen in the learning graph "CartPoleLearningGraph.png" the game seems to have been mastered after about 9000 games. However, after multiple runs this varied from 8000 to greater than 15000 with the weight set given here being the best result(got higher scores when run past 200 frames than other networks).
+ The weights given here as "CartPoleLearnedWeights.npy" were learned during a 15000 game training run which took 73 minutes on a geforce GTX 1070, and i5 3.3ghz processor.  
+
+<p align="center">
+  <img src="CartPoleLearningGraph.png" width="350"/>
+</p>
+ 
+As can be seen in the above average score graph, the game was mastered after about 8000-9000 games. However, after multiple runs this varied from 8000 to greater than 15000. The weight set given here was the best result of the runs as it got higher scores when run past 200 frames than other network weights that solved the game.
  
  The code of the DQN agent used can be seen in "rn_cartpole.py" but the basic idea was as follows:
  1. Pick action based on network or random.
