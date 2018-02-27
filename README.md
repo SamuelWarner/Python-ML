@@ -1,12 +1,21 @@
 # Python Machine Learning
 
-Welcome to a Repository of my personal machine learning code. Feel free to use it where ever you like just include the license files as per the MIT license.
+Welcome to a Repository of my personal machine learning code written almost entirely in python. 
 
 ## Brief History
 
-This project spawned from my first attempt to create a pure python neural network architecture using only python standard library methods, which I called DOONN. DOONN was meant to be used as a way to learn about neural networks and how they are designed. After creating a basic framework I found that many machine learning problems(such as image or voice recognition) required more than standard python alone could provide. Thus this repository was created. The first version of a neural net in this project was Maze; A very similar network to Doonn. However, free from the constrants of python's standard library I was able to create a more advanced framework utilizing GPU power and the numpy library to accelerate learning. Future code will include basic examples of use. Unit tests to catch bugs. Some documentation on main features and methods. As well as different types of networks such as RNNs.
+This project spawned from my first attempt to create a pure python neural network architecture using only python standard library methods, which I called DOONN. DOONN was meant to be used as a way to learn about neural networks and how they are designed. After creating a basic framework I found that many machine learning problems(such as image or voice recognition) required more than standard python alone could provide. Thus this repository was created. The first version of a neural net in this project was Maze; A very similar network to Doonn. However, free from the constrants of python's standard library I was able to create a more advanced framework utilizing GPU power and the numpy library to accelerate learning. I will be adding more network types as I develop them and improving upon existing ones.
 
-## Creating a MazeX neural net
+## Networks currently supported
+
+MazeX - A general purpose Neural Network class that lets a user create a neural net of any size with a few of the more popular activation functions. Useful for data classification or as part of DQN reinforcement learning algorithms for example.
+
+MazeE - A variation of MazeX with methods that allow for evolving network weights through genetic algorithms. Used in the Evolved driver example to have a network learn to drive a vehicle around a course.
+
+MazeC - Work In Progress, Will eventually be a network for computer vision including convolve, max pool, and fully connected layers. Designed in a different way than other network classes here to be more user friendly
+
+
+## Simple MazeX usage example
 
 One of the main parts of this repository is the neural network class "MazeX". Its interface is simple and intuitive and it works with matrices in the form of 2 demensional numpy arrays. To get started you only need to know what number of hidden layers you want, the number of neurons in each layer, and what activation function(see below for supported functions) you want to use. After that it is just a simple line of code:
 
